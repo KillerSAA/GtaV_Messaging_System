@@ -41,7 +41,7 @@ SCRIPT_END
     ShowMessage:
         GET_SCRIPT_STRUCT_NAMED VMSGSYS (pScript)
         IF pScript = 0x0
-            PRINT_FORMATTED_NOW "~r~[Erro] o script ~y~'Gtav_Msg_System.cs'~r~ nao existe!" 5000 
+            PRINT_FORMATTED_NOW "~r~[Error] script ~y~'Gtav_Msg_System.cs'~r~ does not exist!" 5000 
             CLEO_RETURN 0 ()
         ENDIF 
 
