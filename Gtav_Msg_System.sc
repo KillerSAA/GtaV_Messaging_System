@@ -322,22 +322,6 @@ ENDDUMP
 }
 
 {
-    LVAR_INT pLabel bCreating 
-
-    IsBoxCreated:
-        GET_LABEL_POINTER Creating_box (pLabel)
-        READ_MEMORY pLabel 1 FALSE (bCreating) 
-        
-        IF bCreating = TRUE     
-            WRITE_MEMORY pLabel 1 (0) FALSE 
-            RETURN_TRUE 
-        ELSE 
-            RETURN_FALSE 
-        ENDIF 
-    CLEO_RETURN 0 ()
-}
-
-{
     LVAR_INT pLabel bDeleted
 
     IsBoxUpRemoved: 
